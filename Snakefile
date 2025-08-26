@@ -29,6 +29,8 @@ for sample_name, sample_info in config["samples"].items():
             ref_config["filename"]
         )
         UNIQUE_REFERENCE_TARGETS.add(ref_fasta_path)
+        UNIQUE_REFERENCE_TARGETS.add(ref_fasta_path + ".fai")
+        UNIQUE_REFERENCE_TARGETS.add(ref_fasta_path + ".gzi")
     else:
         raise ValueError(
             f"Reference key '{ref_key}' for sample '{sample_name}' not found in 'references' section of config.yaml."
@@ -107,6 +109,7 @@ rule download_reference:
         fi
         mkdir -p $(dirname {output})
         echo "Downloading reference: {params.get_ref_url}"
+        echo "DEBUG: URL is {params.get_ref_url}"
         wget -nv -c "{params.get_ref_url}" -O {output}
         """
 
@@ -128,6 +131,7 @@ rule download_reference_fai:
         fi
         mkdir -p $(dirname {output})
         echo "Downloading reference index: {params.get_ref_url}.fai"
+        echo "DEBUG: URL is {params.get_ref_url}.fai"
         wget -nv -c "{params.get_ref_url}.fai" -O {output}
         """
 
@@ -149,6 +153,7 @@ rule download_reference_gzi:
         fi
         mkdir -p $(dirname {output})
         echo "Downloading reference gzip index: {params.get_ref_url}.gzi"
+        echo "DEBUG: URL is {params.get_ref_url}.gzi"
         wget -nv -c "{params.get_ref_url}.gzi" -O {output}
         """
 
@@ -165,24 +170,13 @@ rule download_giab_vcf:
             )
         ).replace("{data_dir}", config["data_dir"]) # Fix data_dir part
     params:
-        get_url = lambda wildcards: os.path.join(
-            config["giab_base_url"],
-            f"{config['samples'][wildcards.sample_name]['id']}_{wildcards.sample_name}",
-            wildcards.giab_version,
-            wildcards.reference_build,
-            config["giab_vcf_filename_template"].format( # Reconstruct actual filename for URL
-                giab_truth_basename=config["giab_truth_basename_template"].format(
-                    sample_name=wildcards.sample_name,
-                    reference_build=wildcards.reference_build,
-                    giab_version=wildcards.giab_version
-                )
-            )
-        )
+        get_url=lambda wildcards: config["samples"][wildcards.sample_name].get("vcf_url")
     shell:
         """
         set -eo pipefail
         mkdir -p $(dirname {output})
         echo "Downloading VCF for {wildcards.sample_name}: {params.get_url}"
+        echo "DEBUG: URL is {params.get_url}"
         wget -nv -c "{params.get_url}" -O {output}
         """
 
@@ -196,19 +190,7 @@ rule download_giab_tbi:
             )
         ).replace("{data_dir}", config["data_dir"])
     params:
-        get_url = lambda wildcards: os.path.join(
-            config["giab_base_url"],
-            f"{config['samples'][wildcards.sample_name]['id']}_{wildcards.sample_name}",
-            wildcards.giab_version,
-            wildcards.reference_build,
-            config["giab_tbi_filename_template"].format(
-                giab_truth_basename=config["giab_truth_basename_template"].format(
-                    sample_name=wildcards.sample_name,
-                    reference_build=wildcards.reference_build,
-                    giab_version=wildcards.giab_version
-                )
-            )
-        )
+        get_url=lambda wildcards: config["samples"][wildcards.sample_name].get("tbi_url")
     shell:
         """
         set -eo pipefail
@@ -234,6 +216,7 @@ rule download_giab_bed:
         set -eo pipefail
         mkdir -p $(dirname {output})
         echo "Downloading BED for {wildcards.sample_name}: {params.get_url}"
+        echo "DEBUG: URL is {params.get_url}"
         wget -nv -c "{params.get_url}" -O {output}
         """
 
