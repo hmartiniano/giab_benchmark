@@ -214,6 +214,7 @@ rule download_giab_tbi:
         set -eo pipefail
         mkdir -p $(dirname {output})
         echo "Downloading TBI for {wildcards.sample_name}: {params.get_url}"
+        echo "DEBUG: URL is {params.get_url}"
         wget -nv -c "{params.get_url}" -O {output}
         """
 
@@ -263,5 +264,6 @@ rule download_fastq:
         fi
         mkdir -p $(dirname {output})
         echo "Downloading FASTQ for {wildcards.sample_name}: {params.get_fastq_url}"
+        echo "DEBUG: URL is {params.get_fastq_url}"
         wget -nv -c "{params.get_fastq_url}" -O {output}
         """
