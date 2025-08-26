@@ -95,15 +95,61 @@ rule download_reference:
     params:
         # Find the URL for the specific ref_filename from the config
         get_ref_url = lambda wildcards: next(
-            ref_info["url"] for ref_key, ref_info in config["references"].items()
-            if ref_info["filename"] == wildcards.ref_filename
+            (ref_info["url"] for ref_key, ref_info in config["references"].items()
+            if ref_info["filename"] == wildcards.ref_filename), None
         )
     shell:
         """
         set -eo pipefail
+        if [ -z "{params.get_ref_url}" ]; then
+            echo "Error: Could not find URL for reference file {wildcards.ref_filename}" >&2
+            exit 1
+        fi
         mkdir -p $(dirname {output})
         echo "Downloading reference: {params.get_ref_url}"
         wget -nv -c "{params.get_ref_url}" -O {output}
+        """
+
+# Rule to download reference genome index (.fai)
+rule download_reference_fai:
+    output:
+        os.path.join(config["output_ref_dir"].format(data_dir=config["data_dir"]), "{ref_filename}.fai")
+    params:
+        get_ref_url = lambda wildcards: next(
+            (ref_info["url"] for ref_key, ref_info in config["references"].items()
+            if ref_info["filename"] == wildcards.ref_filename), None
+        )
+    shell:
+        """
+        set -eo pipefail
+        if [ -z "{params.get_ref_url}" ]; then
+            echo "Error: Could not find URL for reference file {wildcards.ref_filename}" >&2
+            exit 1
+        fi
+        mkdir -p $(dirname {output})
+        echo "Downloading reference index: {params.get_ref_url}.fai"
+        wget -nv -c "{params.get_ref_url}.fai" -O {output}
+        """
+
+# Rule to download reference genome gzip index (.gzi)
+rule download_reference_gzi:
+    output:
+        os.path.join(config["output_ref_dir"].format(data_dir=config["data_dir"]), "{ref_filename}.gzi")
+    params:
+        get_ref_url = lambda wildcards: next(
+            (ref_info["url"] for ref_key, ref_info in config["references"].items()
+            if ref_info["filename"] == wildcards.ref_filename), None
+        )
+    shell:
+        """
+        set -eo pipefail
+        if [ -z "{params.get_ref_url}" ]; then
+            echo "Error: Could not find URL for reference file {wildcards.ref_filename}" >&2
+            exit 1
+        fi
+        mkdir -p $(dirname {output})
+        echo "Downloading reference gzip index: {params.get_ref_url}.gzi"
+        wget -nv -c "{params.get_ref_url}.gzi" -O {output}
         """
 
 # Rule to download GIAB truth VCF files
