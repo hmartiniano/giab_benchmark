@@ -181,19 +181,7 @@ rule download_giab_bed:
             )
         ).replace("{data_dir}", config["data_dir"])
     params:
-        get_url = lambda wildcards: os.path.join(
-            config["giab_base_url"],
-            f"{config['samples'][wildcards.sample_name]['id']}_{wildcards.sample_name}",
-            wildcards.giab_version,
-            wildcards.reference_build,
-            config["giab_bed_filename_template"].format(
-                giab_truth_basename=config["giab_truth_basename_template"].format(
-                    sample_name=wildcards.sample_name,
-                    reference_build=wildcards.reference_build,
-                    giab_version=wildcards.giab_version
-                )
-            )
-        )
+        get_url=lambda wildcards: config["samples"][wildcards.sample_name].get("bed_url")
     shell:
         """
         set -eo pipefail
