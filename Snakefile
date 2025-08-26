@@ -100,6 +100,8 @@ rule download_reference:
             (ref_info["url"] for ref_key, ref_info in config["references"].items()
             if ref_info["filename"] == wildcards.ref_filename), None
         )
+    wildcard_constraints:
+        ref_filename=r".+\.fasta\.gz"
     shell:
         """
         set -eo pipefail
