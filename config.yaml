@@ -40,7 +40,7 @@ samples:
     reference_key: "GRCh38"
     vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_NA24385_son_GRCh38_v4.2.1_benchmark.vcf.gz"
     tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_NA24385_son_GRCh38_v4.2.1_benchmark.vcf.gz.tbi"
-    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_NA24385_son_GRCh38_v4.2.1_benchmark.bed"
+    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_NA24385_son_GRCh38_v4.2.1_benchmark_noinconsistent.bed"
     fastq_urls:
       - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/NIST_HiSeq_HG002_homogeneity-10953946/NHGRI_Illumina_2x250bps/reads/HG002_read1.fastq.gz"
       - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/NIST_HiSeq_HG002_homogeneity-10953946/NHGRI_Illumina_2x250bps/reads/HG002_read2.fastq.gz"
