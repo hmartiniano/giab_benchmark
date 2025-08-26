@@ -27,9 +27,9 @@ samples:
   #   giab_version: "v4.2.1"
   #   reference_build: "GRCh38"
   #   reference_key: "GRCh38"
-  #   vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
-  #   tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
-  #   bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed"
+  #   vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
+  #   tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
+  #   bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/latest/GRCh38/HG001_GRCh38_1_22_v4.2.1_benchmark.bed"
   #   fastq_urls:
   #     - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/131219_D00360_005_BH814YADXX/reads/R1.fastq.gz"
   #     - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/131219_D00360_005_BH814YADXX/reads/R2.fastq.gz"
@@ -39,9 +39,9 @@ samples:
     giab_version: "v4.2.1"
     reference_build: "GRCh38"
     reference_key: "GRCh38"
-    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
-    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
-    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed"
+    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/latest/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
+    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/latest/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
+    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/latest/GRCh38/HG002_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed"
     fastq_urls:
       - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG002.novaseq.pcr-free.35x.R1.fastq.gz"
       - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG002.novaseq.pcr-free.35x.R2.fastq.gz"
@@ -51,9 +51,9 @@ samples:
     giab_version: "v4.2.1"
     reference_build: "GRCh38"
     reference_key: "GRCh38"
-    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG003_NA24149_father/NISTv4.2.1/GRCh38/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
-    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG003_NA24149_father/NISTv4.2.1/GRCh38/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
-    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG003_NA24149_father/NISTv4.2.1/GRCh38/HG003_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed"
+    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG003_NA24149_father/latest/GRCh38/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
+    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG003_NA24149_father/latest/GRCh38/HG003_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
+    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG003_NA24149_father/latest/GRCh38/HG003_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed"
     fastq_urls:
       - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG003.novaseq.pcr-free.35x.R1.fastq.gz"
       - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG003.novaseq.pcr-free.35x.R2.fastq.gz"
@@ -63,12 +63,48 @@ samples:
     giab_version: "v4.2.1"
     reference_build: "GRCh38"
     reference_key: "GRCh38"
-    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG004_NA24143_mother/NISTv4.2.1/GRCh38/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
-    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG004_NA24143_mother/NISTv4.2.1/GRCh38/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
-    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG004_NA24143_mother/NISTv4.2.1/GRCh38/HG004_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed"
+    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG004_NA24143_mother/latest/GRCh38/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
+    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG004_NA24143_mother/latest/GRCh38/HG004_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
+    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG004_NA24143_mother/latest/GRCh38/HG004_GRCh38_1_22_v4.2.1_benchmark_noinconsistent.bed"
     fastq_urls:
       - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG004.novaseq.pcr-free.35x.R1.fastq.gz"
       - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG004.novaseq.pcr-free.35x.R2.fastq.gz"
+
+  # HG005: # NA24631
+  #   id: "NA24631"
+  #   giab_version: "v4.2.1"
+  #   reference_build: "GRCh38"
+  #   reference_key: "GRCh38"
+  #   vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG005_NA24631_son/latest/GRCh38/HG005_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
+  #   tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG005_NA24631_son/latest/GRCh38/HG005_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
+  #   bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG005_NA24631_son/latest/GRCh38/HG005_GRCh38_1_22_v4.2.1_benchmark.bed"
+  #   fastq_urls:
+  #     - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG005.novaseq.pcr-free.35x.R1.fastq.gz"
+  #     - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG005.novaseq.pcr-free.35x.R2.fastq.gz"
+
+  # HG006: # NA24694
+  #   id: "NA24694"
+  #   giab_version: "v4.2.1"
+  #   reference_build: "GRCh38"
+  #   reference_key: "GRCh38"
+  #   vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG006_NA24694_father/latest/GRCh38/HG006_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
+  #   tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG006_NA24694_father/latest/GRCh38/HG006_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
+  #   bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG006_NA24694_father/latest/GRCh38/HG006_GRCh38_1_22_v4.2.1_benchmark.bed"
+  #   fastq_urls:
+  #     - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG006.novaseq.pcr-free.35x.R1.fastq.gz"
+  #     - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG006.novaseq.pcr-free.35x.R2.fastq.gz"
+
+  # HG007: # NA24695
+  #   id: "NA24695"
+  #   giab_version: "v4.2.1"
+  #   reference_build: "GRCh38"
+  #   reference_key: "GRCh38"
+  #   vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG007_NA24695_mother/latest/GRCh38/HG007_GRCh38_1_22_v4.2.1_benchmark.vcf.gz"
+  #   tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG007_NA24695_mother/latest/GRCh38/HG007_GRCh38_1_22_v4.2.1_benchmark.vcf.gz.tbi"
+  #   bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/ChineseTrio/HG007_NA24695_mother/latest/GRCh38/HG007_GRCh38_1_22_v4.2.1_benchmark.bed"
+  #   fastq_urls:
+  #     - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG007.novaseq.pcr-free.35x.R1.fastq.gz"
+  #     - "https://opendata.nist.gov/pdrsrv/mds2-2336/input_fastqs/HG007.novaseq.pcr-free.35x.R2.fastq.gz"
 
 
 # --- Output Path and Filename Templates ---
