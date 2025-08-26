@@ -23,23 +23,27 @@ references:
 samples:
   HG001: # NA12878
     id: "NA12878"
-    giab_version: "v4.2.1" # Or v3.3.2 for older GRCh37 benchmarks
-    reference_build: "GRCh38" # This is for the GIAB path structure and filenames (e.g., HG001_GRCh38_...)
-    reference_key: "GRCh38"   # This key points to an entry in the 'references' section above
+    giab_version: "v4.2.1"
+    reference_build: "GRCh38"
+    reference_key: "GRCh38"
+    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_v4.2.1_benchmark.vcf.gz"
+    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_v4.2.1_benchmark.vcf.gz.tbi"
+    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/NA12878_HG001/NISTv4.2.1/GRCh38/HG001_GRCh38_v4.2.1_benchmark.bed"
     fastq_urls:
-      # Illumina 300x data from NIST
-      - "ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/131219_D00360_005_BH814YADXX/reads/R1.fastq.gz"
-      - "ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/131219_D00360_005_BH814YADXX/reads/R2.fastq.gz"
+      - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/131219_D00360_005_BH814YADXX/reads/R1.fastq.gz"
+      - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/131219_D00360_005_BH814YADXX/reads/R2.fastq.gz"
 
   HG002: # NA24385
     id: "NA24385"
     giab_version: "v4.2.1"
     reference_build: "GRCh38"
     reference_key: "GRCh38"
+    vcf_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_NA24385_son_GRCh38_v4.2.1_benchmark.vcf.gz"
+    tbi_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_NA24385_son_GRCh38_v4.2.1_benchmark.vcf.gz.tbi"
+    bed_url: "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/AshkenazimTrio/HG002_NA24385_son/NISTv4.2.1/GRCh38/HG002_NA24385_son_GRCh38_v4.2.1_benchmark.bed"
     fastq_urls:
-      # Illumina 2x250bp data from NIST
-      - "ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG002_NA24385_son/NIST_HiSeq_HG002_homogeneity-10953946/NHGRI_Illumina_2x250bps/reads/HG002_read1.fastq.gz"
-      - "ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG002_NA24385_son/NIST_HiSeq_HG002_homogeneity-10953946/NHGRI_Illumina_2x250bps/reads/HG002_read2.fastq.gz"
+      - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/NIST_HiSeq_HG002_homogeneity-10953946/NHGRI_Illumina_2x250bps/reads/HG002_read1.fastq.gz"
+      - "https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/NIST_HiSeq_HG002_homogeneity-10953946/NHGRI_Illumina_2x250bps/reads/HG002_read2.fastq.gz"
 
 
 # --- Output Path and Filename Templates ---
